@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="cabecalho_cadastro">
+    <h1>Sobre</h1>
+    <h2>Faculdade de Tecnologia Exemplo</h2>
+   
+    </header>
+    <nav class="top-nav">
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='../index.html'">Início</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='cadastro.html'">Cadastro de Alunos</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='notas.html'">Notas</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='relatorios.html'">Relatórios</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='sobre.html'">Sobre</button>
+    </nav>
+  
+    <div class="containerN">
+    <div class="cardN">
+      <img src="../img/Pedro.jpeg" alt="Foto do Membro 1">
+      <h3>Pedro Henrique Brum Antonievicz</h3>
+      <p>Tenho 25 anos, trabalho na tv evangelizar, estudei engenharia química na pucpr, onde encontrei com a programação e resolvi seguir esse caminho, hoje curso análise e desenvolvimento de sistemas na unicesumar.</p>
+    </div>
+    <div class="cardN">
+      <img src="../img/Giuliano.jpeg" alt="Foto do Membro 2">
+      <h3>Giuliano Lell</h3>
+      <p>Estudante de ADS 3° Período, Formado em Gestão de TI, com experiencia em gerenciamento de projetos.</p>
+    </div>
+    <div class="cardN">
+      <img src="../img/Kaue.jpeg" alt="Foto do Membro 3">
+      <h3>Kauê Ricardo Betega</h3>
+      <p>Especialista em atendimento ao cliente com foco em resultados. Reduzi reclamações repetidas em 15% ao diagnosticar a dor do cliente em 30 segundos. Resiliência, negociação e visão analítica para novos desafios.</p>
+    </div>
+    <div class="cardN">
+      <img src="../img/vinicius.webp" alt="Foto do Membro 4">
+      <h3>Vinicius Matheus Zelinski de França</h3>
+      <p>Estudante de ADS 3° Período, experiencia em desenvolvimento de software e com gestão de equipe.</p>
+    </div>
+  </div>
+</body>
+</html>

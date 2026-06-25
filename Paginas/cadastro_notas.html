@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento de Notas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="cabecalho_cadastro">
+        <h1>Lançamento de Notas</h1>
+        <h2>Faculdade de Tecnologia Exemplo</h2>
+    </header>
+    <nav class="top-nav">
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='../index.html'">Início</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='cadastro.html'">Cadastro de Alunos</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='notas.html'">Notas</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='relatorios.html'">Relatórios</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='sobre.html'">Sobre</button>
+    </nav>
+
+    <main id="conteudo">
+        <section class="card">
+            
+            <p>Aluno</p>
+            <input id="nomeAlunoNotas" disabled style="background-color: #e9ecef; cursor: not-allowed;">
+            <br><br>
+
+            <p>Matéria</p>
+            <select id="materiaNotas">
+                <option value="default">Selecione a disciplina</option>
+                <option value="Logica">Lógica de Programação</option>
+                <option value="BancoDados">Banco de Dados</option>
+                <option value="Programacao_FrontEnd">Programação FrontEnd</option>
+            </select>
+            <br><br>
+
+            <p>Nota 1</p>
+            <input type="number" id="nota1Input" min="0" max="10" placeholder="Digite a Nota 1">
+            <br><br>
+
+            <p>Nota 2</p>
+            <input type="number" id="nota2Input" min="0" max="10" placeholder="Digite a Nota 2">
+            <br><br>
+
+            <button id="salvarNotasBtn" onclick="salvarNovasNotas()">Salvar Notas</button>
+
+        </section>
+    </main>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "nome" : "João Silva",
+        "curso": "ADS",
+        "semestre" : 3,
+        "data de nascimento" : 12082002,
+        "nota1" : 9,
+        "nota2" : 8,
+        "media": 8.5,
+        "situação": "aprovado"
+    },
+    {
+        "nome" : "Maria Souza",
+        "curso": "Engenharia de Software",
+        "semestre" : 5,
+        "data de nascimento" : 13032001,
+        "nota1" : 7,
+        "nota2" : 5,
+        "media": 6,
+        "situação": "recuperação"
+    },
+    {
+        "nome" : "Carlos Pereira",
+        "curso": "Sistemas de Informação",
+        "semestre" : 1,
+        "data de nascimento" : 25042003,
+        "nota1" : 4,
+        "nota2" : 4,
+        "media": 4,
+        "situação": "reprovado"
+    }
+]

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <header id="cabecalho_cadastro">
+    <h1>Cadastro de alunos</h1>
+    <h2>Faculdade de Tecnologia Exemplo</h2>
+    
+    </header>
+    <nav class="top-nav">
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='../index.html'">Início</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='cadastro.html'">Cadastro de Alunos</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='notas.html'">Notas</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='relatorios.html'">Relatórios</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='sobre.html'">Sobre</button>
+    </nav>
+
+    <main id="conteudo">
+
+        
+        <section class="card">
+            
+            <p>Nome</p>
+            <input id = "nomeCadastro" placeholder="Digite o nome completo">
+            <br><br>
+            <p>Curso</p>
+            <select id="cursoCadastro">
+                <option value="default">Selecione</option>
+                <option value="EngenhariaSoftware">Engenharia de Software</option>
+                <option value="EngenhariaMecanica">Engenharia Mecânica</option>
+                <option value="EngenhariaQuimica">Engenharia Química</option>
+                <option value="ADS">ADS</option>
+                <option value="SistemasInformacao">Sistemas de Informaçãocao</option>
+            </select>
+            <br><br>
+            <p>Semestre</p>
+            <input id = "semestreCadastro" placeholder="Digite o semestre que deseja iniciar">
+            <br><br>
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <br>
+            <input type="date" id="nascimentoCadastro">
+            <button id = "cadastrarAluno" onclick = "CadastrarAluno()">Cadastrar Aluno</button>
+
+        </section>
+
+    </main>
+    <script src="../javascript/script.js" ></script>
+</body>
+</html>

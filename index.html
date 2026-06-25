@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Acadêmico</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+    <header>
+
+    <h1>Portal Acadêmico</h1>
+    <h2>Faculdade de Tecnologia Exemplo</h2>
+
+    </header>
+    <nav class="top-nav">
+        <button type="button" onclick="window.location.href='./index.html'">Início</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='./Paginas/cadastro.html'">Cadastro de Alunos</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='./Paginas/notas.html'">Notas</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='./Paginas/relatorios.html'">Relatórios</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='./Paginas/sobre.html'">Sobre</button>
+    </nav>
+    <main id="conteudo">
+
+        <section class="card">
+
+            <h2>Bem vindo ao Portal Acadêmico</h2>
+
+            <p>
+                Este sistema permite realizar o cadastro de alunos, lançamento de notas, consultas e geração de relatórios acadêmicos.
+            </p>
+
+        </section>
+
+    </main>
+
+    <div id="divAlunosCadastrados">
+        <h1>Alunos Cadastrados</h1>
+        <table id="tabAlunosCadastrados">
+            <thead id="headerNome">
+                <tr>
+                    <th class="sortable" data-sort="nome">Nome <span class="sort-icon">▲▼</span></th>
+                    <th class="sortable" data-sort="curso">Curso <span class="sort-icon">▲▼</span></th>
+                    <th class="sortable" data-sort="semestre">Semestre <span class="sort-icon">▲▼</span></th>
+                    <th class="sortable" data-sort="media">Média <span class="sort-icon">▲▼</span></th>
+                    <th>Situação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="AlunosCadastrados">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+
+</head>
+<body>
+    <header id="cabecalho_cadastro">
+    <h1>Notas</h1>
+    <h2>Faculdade de Tecnologia Exemplo</h2>
+   
+    </header>
+    <nav class="top-nav">
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='../index.html'">Início</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='cadastro.html'">Cadastro de Alunos</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='notas.html'">Notas</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='relatorios.html'">Relatórios</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='sobre.html'">Sobre</button>
+    </nav>
+
+ <h1>Alterar Notas dos Alunos</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+        <th>Média</th>
+        <th>Situação</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="TabelaNotas"></tbody>
+  </table>
+
+
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

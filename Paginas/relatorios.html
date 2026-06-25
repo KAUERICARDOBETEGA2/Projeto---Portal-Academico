@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="cabecalho_cadastro">
+        <h1>Relatórios Gerenciais</h1>
+        <h2>Faculdade de Tecnologia Exemplo</h2>
+    </header>
+    
+    <nav class="top-nav">
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='../index.html'">Início</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_editando_index'); localStorage.removeItem('aluno_notas_index'); window.location.href='cadastro.html'">Cadastro de Alunos</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='notas.html'">Notas</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='relatorios.html'">Relatórios</button>
+        <button type="button" onclick="localStorage.removeItem('aluno_notas_index'); window.location.href='sobre.html'">Sobre</button>
+    </nav>
+
+    <main id="conteudo" style="display: flex; flex-direction: column; gap: 20px; padding: 20px;">
+        
+        <section class="card">
+            <h3> Estatística Geral</h3>
+            <p>Total de Alunos: <strong id="relGeralTotal">0</strong></p>
+            <p>Aprovados: <strong id="relGeralAprovados" style="color: #28a745;">0</strong></p>
+            <p>Em Recuperação: <strong id="relGeralRecuperacao" style="color: #fd7e14;">0</strong></p>
+            <p>Reprovados: <strong id="relGeralReprovados" style="color: #dc3545;">0</strong></p>
+        </section>
+
+        <section class="card">
+            <h3> Relatório de Curso</h3>
+            <p>Total de Alunos: <strong id="relCursoTotal">0</strong></p>
+            <div id="relCursoLista">
+                </div>
+        </section>
+
+        <section class="card">
+            <h3> Desempenho Acadêmico</h3>
+            <p>Maior Média: <strong id="relDesMaiorMedia">0</strong></p>
+            <p>Menor Média: <strong id="relDesMenorMedia">0</strong></p>
+            <p>Média Geral da Instituição: <strong id="relDesMediaGeral">0</strong></p>
+            <hr style="margin: 10px 0;">
+            <p>Alunos com a Maior Média: <strong id="relDesQtdMaior">0</strong></p>
+            <p>Alunos Acima da Média Geral: <strong id="relDesAcima">0</strong></p>
+            <p>Alunos Abaixo da Média Geral: <strong id="relDesAbaixo">0</strong></p>
+        </section>
+
+        <section class="card">
+            <h3> Top 5 - Melhores Alunos</h3>
+            <ol id="relTop5Lista" style="padding-left: 20px;">
+                </ol>
+        </section>
+
+    </main>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
