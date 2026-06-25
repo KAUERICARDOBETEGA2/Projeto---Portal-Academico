@@ -1,5 +1,5 @@
 # Projeto---Portal-Academico
-Projeto produzido por 4 alunos de ADS no terceiro período do curso, para a matéria de Programação Front End.
+Projeto produzido por 4 alunos de ADS no terceiro período do curso, para a matéria de Programação Front End da UniCesumar.
 
 ALUNOS PARTICIPANTES:
 
