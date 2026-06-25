@@ -7,3 +7,5 @@ Pedro Henrique Brum Antonievicz
 Giuliano Lell
 Kauê Ricardo Betega
 Vinicius Matheus Zelinski de França
+
+Versão 6.0
